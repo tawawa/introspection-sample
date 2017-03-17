@@ -1,0 +1,20 @@
+{
+  "name": "introspection-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^7.3.0",
+    "selfsigned": "^1.8.0",
+    "superagent": "^3.5.0",
+    "superagent-bluebird-promise": "^4.2.0",
+    "ursa": "^0.9.4"
+  }
+}
