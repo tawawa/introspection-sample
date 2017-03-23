@@ -6,6 +6,9 @@ const jwt = require('jsonwebtoken');
 const request = require('superagent-bluebird-promise');
 require('dotenv').config();
 
+// used for local testing, never do this in a production env
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 let accessToken;
 
 // authenticate
