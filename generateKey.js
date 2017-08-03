@@ -39,7 +39,7 @@ function generateSelfSigned(commonName, cb) {
       pkcs7: cert.pkcs7,
       subject: '/CN=' + commonName
     };
-    fs.writeFile('signingKey.json', keyData, 'utf8', function (err, result) {
+    fs.writeFile('signingKey.json', JSON.stringify(keyData, null, 2), 'utf8', function (err, result) {
       cb(null, keyData);
     });
 
