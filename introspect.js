@@ -16,7 +16,7 @@ function generateAssertion(rsIdentifier, tenantUrl) {
   };
 
   // generate a jwt and sign it with the private key
-  return jwt.sign(jwtPayload, signingKey.key, { algorithm: 'RS256'});
+  return jwt.sign(jwtPayload, signingKey.key, { keyid: "123", algorithm: 'RS256'});
 }
 
 function introspectToken(token) {

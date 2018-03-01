@@ -42,7 +42,7 @@ request
     .patch(`${process.env.AUTH0_MGMTAPI_IDENTIFIER}resource-servers/${selectedResourceServer.id}`)
     .set('Authorization', 'Bearer ' + accessToken)
     .send({
-      verificationKey: signingKey.cert
+      verificationKeys: [{kid: '123', pem: signingKey.cert}]
     });
 }).then(res => {
   if (res.statusCode !== 200) {
